@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        /* Resetting some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        /* Menu Section */
+        .menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+            gap: 30px;
+        }
+
+        .menu-category {
+            background-color: #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            text-align: center;
+            height: 400px;
+        }
+
+        .menu-category:hover {
+            transform: translateY(-10px);
+        }
+
+        .category-content {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .category-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .category-content p {
+            font-size: 1.1rem;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .category-content .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #e67e22;
+        }
+
+        .category-content .order-btn {
+            padding: 10px 15px;
+            background-color: #e67e22;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .category-content .order-btn:hover {
+            background-color: #d35400;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        footer a {
+            color: #e67e22;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Restaurant Menu</h1>
+        <p>Delicious dishes made with love!</p>
+    </header>
+
+    <!-- Menu Section -->
+    <div class="menu">
+        <div class="menu-category" style="background-color: #ffb3b3;">
+            <div class="category-content">
+                <h3>Spaghetti Bolognese</h3>
+                <p>A classic Italian dish with rich tomato sauce, ground beef, and herbs.</p>
+                <div class="price">₹1199</div>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+
+        <div class="menu-category" style="background-color: #ffeb99;">
+            <div class="category-content">
+                <h3>Margherita Pizza</h3>
+                <p>Thin crust pizza topped with fresh mozzarella, tomatoes, and basil.</p>
+                <div class="price">₹899</div>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+
+        <div class="menu-category" style="background-color: #c2f0c2;">
+            <div class="category-content">
+                <h3>Caesar Salad</h3>
+                <p>Crisp lettuce, croutons, parmesan cheese, and a creamy Caesar dressing.</p>
+                <div class="price">₹699</div>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+
+        <div class="menu-category" style="background-color: #99ccff;">
+            <div class="category-content">
+                <h3>Grilled Chicken</h3>
+                <p>Juicy grilled chicken breast served with a side of steamed vegetables.</p>
+                <div class="price">₹999</div>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+
+        <!-- New Menu Items with background colors -->
+        <div class="menu-category" style="background-color: #ffccff;">
+            <div class="category-content">
+                <h3>Cheeseburger</h3>
+                <p>Classic cheeseburger with lettuce, tomato, and melted cheddar cheese.</p>
+                <div class="price">₹799</div>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+
+        <div class="menu-category" style="background-color: #ffdd99;">
+            <div class="category-content">
+                <h3>Carbonara Pasta</h3>
+                <p>Italian pasta with creamy sauce, bacon, and parmesan cheese.</p>
+                <div class="price">₹1099</div>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+
+        <div class="menu-category" style="background-color: #f2b3d4;">
+            <div class="category-content">
+                <h3>Chocolate Cake</h3>
+                <p>Rich and moist chocolate cake with a smooth chocolate ganache.</p>
+                <div class="price">₹599</div>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+
+        <div class="menu-category" style="background-color: #c9e6f5;">
+            <div class="category-content">
+                <h3>Ice Cream Sundae</h3>
+                <p>Vanilla ice cream topped with chocolate syrup and sprinkles.</p>
+                <div class="price">₹399</div>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+
+        <div class="menu-category" style="background-color: #d9e2d9;">
+            <div class="category-content">
+                <h3>Fresh Fruit Salad</h3>
+                <p>Seasonal fresh fruits served with a honey lime dressing.</p>
+                <div class="price">₹499</div>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Restaurant Name | All Rights Reserved</p>
+        <p>Visit us: <a href="https://www.restaurantwebsite.com">www.restaurantwebsite.com</a></p>
+    </footer>
+
+</body>
+</html>
